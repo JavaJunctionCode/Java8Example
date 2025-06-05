@@ -36,15 +36,17 @@ public class PredicateEx6 {
 		display(p1.or(p3), list);
 		System.out.println("All Employees Information who are not managers:");
 		display(p1.negate(), list);
-		Predicate<Employee> isCEO = Predicate.isEqual(new Employee("Durga", "CEO", 30000, "Hyderabad"));
-		Employee e1 = new Employee("Durga", "CEO", 30000, "Hyderabad");
+		
+		
+		Predicate<Employee> isCEO = Predicate.isEqual(new Employee("Rajveer", "CEO", 30000, "Hyderabad"));
+		Employee e1 = new Employee("Rajveer", "CEO", 30000, "Hyderabad");
 		Employee e2 = new Employee("Sunny", "Manager", 20000, "Hyderabad");
-		System.out.println(isCEO.test(e1));// true
+		System.out.println("Is Equal " + isCEO.test(e1));// true
 		System.out.println(isCEO.test(e2));// false
 	}
 
 	public static void populate(ArrayList<Employee> list) {
-		list.add(new Employee("Durga", "CEO", 30000, "Hyderabad"));
+		list.add(new Employee("Rajveer", "CEO", 30000, "Hyderabad"));
 		list.add(new Employee("Sunny", "Manager", 20000, "Hyderabad"));
 		list.add(new Employee("Mallika", "Manager", 20000, "Bangalore"));
 		list.add(new Employee("Kareena", "Lead", 15000, "Hyderabad"));
