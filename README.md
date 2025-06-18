@@ -14,4 +14,4 @@
 - RESTful Services
 - Eclipse RCP (Rich Client Platform)
 - Maven, Git, SVN
-- SWT, JFace, SWTBot Testing
+- SWT, JFace
